@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typestreak</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="side-div left-side">left</div>
+        <div class="centered-div">
+            <div class="input-container">
+                <input type="text" id="input-div" placeholder="hellohe">
+                <div class="cursor-overlay"></div> <!-- Transparent overlay -->
+                <div class="centered-div-placeholder" id="placeholder">hello</div>
+            </div>
+        </div>
+        <div class="side-div right-side">right</div>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const inputField = document.getElementById('input-div');
+            const placeholder = document.getElementById('placeholder');
+            const cursorOverlay = document.querySelector('.cursor-overlay');
+
+            inputField.addEventListener('input', () => {
+                placeholder.style.visibility = inputField.value ? 'hidden' : 'visible';
+            });
+
+            // Set cursor position to the start of the placeholder text
+            inputField.addEventListener('focus', () => {
+                setTimeout(() => {
+                    // Position cursor at the start of the placeholder text
+                    const placeholderRect = placeholder.getBoundingClientRect();
+                    const inputRect = inputField.getBoundingClientRect();
+                    const offsetX = placeholderRect.left - inputRect.left;
+                    cursorOverlay.style.left = `${offsetX}px`;
+                }, 0);
+            });
+
+            inputField.focus();
+        });
+    </script>
+</body>
+</html>

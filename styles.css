@@ -1,0 +1,118 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+
+}
+.container {
+  position: relative;
+}
+
+
+.centered-div {
+  position: relative; /* Changed to relative positioning */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-div #input-div{
+  position: relative; /* Changed to relative positioning */
+
+  width: 70vh; /* Adjust width as needed */
+  height: 30vh; /* Adjust height as needed */
+  background-color: #e2ae1f; /* Example background color */
+  border-radius: 10px; /* Optional: adds rounded corners */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 130px;
+  letter-spacing: 0.1px;
+  border: none;
+}
+
+#input-div {
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+.centered-div-placeholder {
+  position: absolute; /* Positioning the placeholder absolutely */
+  font-size: 50px; /* Adjust font size as needed */
+   /* Adjust color as needed */
+   font-weight: 600;
+   font-size: 130px;
+   
+   letter-spacing: 0.1px;
+   
+   
+}
+
+input{
+text-align: center;
+}
+
+
+
+.side-div {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30%; /* Adjust width as needed */
+  height: 10vh; /* Adjust height as needed */
+  background-color: #ccc; /* Example background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 60;
+  border-radius: 5px;
+
+
+
+
+}
+
+.left-side {
+  left: calc(1% - 200px - 25px); /* 200px from center div + half of side div width */
+}
+
+.right-side {
+  right: calc(1% - 200px - 25px); /* 200px from center div + half of side div width */
+}
+
+#input-div{
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+input:focus {
+  outline: none; /* Prevent the default browser outline */
+  border-color: #ccc; /* Set the border color when input is focused */
+}
+
+/* Styles for the transparent cursor overlay */
+.cursor-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  background-color: transparent;
+  pointer-events: none; /* Allow clicks to pass through */
+}
