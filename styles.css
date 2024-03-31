@@ -6,7 +6,13 @@ body, html {
   justify-content: center;
   align-items: center;
   font-family: 'Roboto';
-
+  background-color: #070932; 
+}
+#input-div.show-placeholder::placeholder {
+  opacity: 1;
+}
+body{
+  background-color: #070932; 
 }
 .container {
   position: relative;
@@ -25,7 +31,7 @@ body, html {
 
   width: 70vh; /* Adjust width as needed */
   height: 30vh; /* Adjust height as needed */
-  background-color: #e2ae1f; /* Example background color */
+  background-color: #070932; 
   border-radius: 10px; /* Optional: adds rounded corners */
   display: flex;
   justify-content: center;
@@ -42,10 +48,9 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: none;
+  color: #ffffff;
 }
-
-
-
 
 
 .centered-div-placeholder {
@@ -54,10 +59,8 @@ body, html {
    /* Adjust color as needed */
    font-weight: 600;
    font-size: 130px;
-   
    letter-spacing: 0.1px;
-   
-   
+   pointer-events: none; /* Prevent interaction */
 }
 
 input{
@@ -72,18 +75,16 @@ text-align: center;
   transform: translateY(-50%);
   width: 30%; /* Adjust width as needed */
   height: 10vh; /* Adjust height as needed */
-  background-color: #ccc; /* Example background color */
+  background-color: #070932; 
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
   font-weight: 60;
   border-radius: 5px;
-
-
-
-
+  color: #ffffff;
 }
+
 
 .left-side {
   left: calc(1% - 200px - 25px); /* 200px from center div + half of side div width */
@@ -98,21 +99,20 @@ text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 input:focus {
   outline: none; /* Prevent the default browser outline */
-  border-color: #ccc; /* Set the border color when input is focused */
 }
 
-/* Styles for the transparent cursor overlay */
-.cursor-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 1px;
-  background-color: transparent;
-  pointer-events: none; /* Allow clicks to pass through */
+*{
+    /* cursor: none; */
+  caret-color: transparent;
+
+
+
 }
+
+
+
