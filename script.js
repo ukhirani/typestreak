@@ -13,8 +13,18 @@ window.addEventListener('DOMContentLoaded', (event) => {
     spacebar();
             }
 });
+
+
+
+
+
 input_div = document.getElementById("input-div");
 
+document.addEventListener('keyup', (event) => {
+    if (event.key === ' ') {
+    ;
+         input_div.focus()   }
+});
 
 
 // Function to clear the input field and show placeholder
@@ -29,7 +39,7 @@ function clearInputAndShowPlaceholder() {
     inputElement.value = inputElement.value.slice(0, -1);
 
     // Focus on the input field
-    inputElement.focus();
+    inputElement.blur();
 }
 
 // Call the function to clear the input and show the placeholder
@@ -44,6 +54,7 @@ var centerindex;
 var rightindex;
 
 function spacebar() {
+    
 
     lefttext = document.getElementById("side-div left-side").innerText;
     righttext = document.getElementById("side-div left-side").innerText;
@@ -56,16 +67,16 @@ i = Math.floor(Math.random() * (500));
 
 console.log(centertext)
 
+input_div.placeholder = centertext;
 centertext = '';
 input_div.value = centertext;
-input_div.placeholder = "helloo";
-input_div.style.display = 'none';
+//input_div.style.display = 'none';
 input_div.style.display = 'block';
 
 // Focus on the input field
 // simulateBackspacePress();
 clearInputAndShowPlaceholder();
-input_div.focus();
+// input_div.focus();
 //  asdf 
 
 
