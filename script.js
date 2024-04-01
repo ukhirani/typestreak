@@ -14,35 +14,26 @@ window.addEventListener('DOMContentLoaded', (event) => {
             }
 });
 
-
-
-
-
 input_div = document.getElementById("input-div");
 
 document.addEventListener('keyup', (event) => {
     if (event.key === ' ') {
-    ;
-         input_div.focus()   }
+    
+         input_div.focus() ;
+          }
 });
 
 
-// Function to clear the input field and show placeholder
 function clearInputAndShowPlaceholder() {
-    // Get the input element
     var inputElement = document.getElementById('input-div');
 
-    // Clear the input field
     inputElement.value = '';
 
-    // Remove the last character (simulate backspace press)
     inputElement.value = inputElement.value.slice(0, -1);
 
-    // Focus on the input field
     inputElement.blur();
 }
 
-// Call the function to clear the input and show the placeholder
 
 
 
@@ -56,28 +47,24 @@ var rightindex;
 function spacebar() {
     
 
-    lefttext = document.getElementById("side-div left-side").innerText;
-    righttext = document.getElementById("side-div left-side").innerText;
+
+    lefttext = document.getElementById("side-div left-side");
+    righttext = document.getElementById("side-div right-side");
     centertext = document.getElementById("input-div").value;
 
     input_div = document.getElementById("input-div");
-
 
 i = Math.floor(Math.random() * (500));
 
 console.log(centertext)
 
-input_div.placeholder = centertext;
+lefttext.value = top1000Words[i];
 centertext = '';
+
 input_div.value = centertext;
-//input_div.style.display = 'none';
 input_div.style.display = 'block';
 
-// Focus on the input field
-// simulateBackspacePress();
 clearInputAndShowPlaceholder();
-// input_div.focus();
-//  asdf 
 
 
 
