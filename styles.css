@@ -26,7 +26,7 @@ body{
   align-items: center;
 }
 
-.centered-div #input-div{
+.centered-div #input-div {
   position: relative; /* Changed to relative positioning */
 
   width: 70vh; /* Adjust width as needed */
@@ -44,6 +44,15 @@ body{
 }
 
 #input-div {
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: none;
+  color: #ffffff;
+}
+
+#input-div-back {
   font-size: larger;
   display: flex;
   justify-content: center;
@@ -113,6 +122,4 @@ input:focus {
 
 
 }
-
-
 
