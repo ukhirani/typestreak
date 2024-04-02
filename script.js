@@ -12,7 +12,7 @@ top1000Words = [
 ]
 
 
-// top1000Words = [word for word in top1000Words if len(word) <= 5]
+
 
 
 window.addEventListener('DOMContentLoaded', (event) => {
@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         
         event.stopPropagation(); // Stop event propagation
         event.preventDefault();
-
+ 
 }
 });
 
