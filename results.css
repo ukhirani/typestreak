@@ -1,0 +1,36 @@
+
+@keyframes showresults {
+    from {
+
+
+
+        
+        
+        opacity: 0;
+        
+    }
+    to {
+        font-size:  65px;
+        opacity: 1;
+        background-color: red;
+    }
+}
+
+@keyframes hideinput {
+    from {
+        
+        opacity: 1;
+    }
+    to {
+
+        opacity: 0;
+    }
+}
+
+.visible{
+    animation: showresults 2s ease forwards ;
+
+}
+.hidden{
+    animation: hideinput 0.5s ease forwards ;
+}

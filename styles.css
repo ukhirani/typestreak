@@ -17,21 +17,16 @@ body{
 }
 .container {
   position: relative;
+  height: 100%;
+  width: 100%;
 }
 
-
-.centered-div {
-  position: relative; /* Changed to relative positioning */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .centered-div #input-div {
   position: relative; /* Changed to relative positioning */
 
   width: 70vh; /* Adjust width as needed */
-  height: 30vh; /* Adjust height as needed */
+  height: 40vh; /* Adjust height as needed */
   background-color: #070932; 
   border-radius: 10px; /* Optional: adds rounded corners */
   display: flex;
@@ -43,6 +38,14 @@ body{
   letter-spacing: 0.1px;
   border: none;
 }
+.centered-div {
+  position: relative; /* Changed to relative positioning */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust height as needed */
+}
+
 
 #input-div {
   font-size: larger;
@@ -72,6 +75,11 @@ body{
    letter-spacing: 0.1px;
    pointer-events: none; /* Prevent interaction */
    z-index: 2;
+   /* opacity: 0; */
+}
+
+.hidden{
+  opacity: 0;
 }
 
 input{
@@ -88,8 +96,8 @@ text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
-  font-weight: 300; /* Corrected typo */
+  font-size: 45px;
+  font-weight: 10; /* Corrected typo */
   border-radius: 5px;
   color: #ffffff;
   z-index: 1;
@@ -97,11 +105,14 @@ text-align: center;
 }
 
 .left-side {
-  left: calc(1% - 200px - 25px); /* 200px from center div + half of side div width */
+  left: calc(1% - 105px - 25px); /* 100px from center div + half of side div width */
+  /* transform: translateX(-50%); */
 }
 
 .right-side {
-  right: calc(1% - 200px - 25px); /* 200px from center div + half of side div width */
+  right: calc(1% - 105px - 25px); /* 100px from center div + half of side div width */
+  /* transform: translateX(50%); */
+
 }
 
 #input-div{
@@ -123,4 +134,3 @@ input:focus {
 
 
 }
-
