@@ -6,6 +6,7 @@ body, html {
   justify-content: center;
   align-items: center;
   font-family: 'Roboto';
+  background: none;
   background-color: #070932; 
 }
 #input-div.show-placeholder::placeholder {
@@ -70,6 +71,7 @@ body{
    font-size: 130px;
    letter-spacing: 0.1px;
    pointer-events: none; /* Prevent interaction */
+   z-index: 2;
 }
 
 input{
@@ -77,23 +79,22 @@ text-align: center;
 }
 
 
-
 .side-div {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 50%; /* Start from the middle of the parent container */
   width: 30%; /* Adjust width as needed */
-  height: 10vh; /* Adjust height as needed */
+  height: 15vh; /* Adjust height as needed */
   background-color: #070932; 
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  font-weight: 60;
+  font-weight: 300; /* Corrected typo */
   border-radius: 5px;
   color: #ffffff;
+  z-index: 1;
+  margin-top: -7.5vh; /* Half of the height to move it up */
 }
-
 
 .left-side {
   left: calc(1% - 200px - 25px); /* 200px from center div + half of side div width */
