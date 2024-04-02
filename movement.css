@@ -14,7 +14,7 @@
 
 @keyframes moveToRight {
     0% { opacity: 1; transform: translateX(0%);}
-    40% { opacity: 0;transform: translateX(-100%); }
+    40% {font-size: 0px; opacity: 0;transform: translateX(-50%); }
     75% { opacity: 0;transform: translateX(0%); }
     87% { opacity: 0.5;transform: translateX(0%); }
     100% { opacity: 1;transform: translateX(0%); }
@@ -26,6 +26,6 @@
 }
 
 .move-right {
-    animation: moveToRight 0.5s ease forwards;
+    animation: moveToRight 0.50s ease forwards;
     
 }
