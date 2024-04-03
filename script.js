@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
         
-        event.stopPropagation(); // Stop event propagation
+        event.stopPropagation(); 
         event.preventDefault();
  
 }
@@ -214,8 +214,11 @@ var counter = 0;
 console.log(streak,"final streak");
 
 var intervalId = setInterval(function() {    
+    if(streak!=0){
+
+        counter++;
+    }
     result_div.innerText = counter;
-     counter++;
     if (counter >= streak) {
         console.log("clear interval ");
         clearInterval(intervalId);

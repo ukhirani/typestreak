@@ -23,12 +23,12 @@ body{
 
 
 .centered-div #input-div {
-  position: relative; /* Changed to relative positioning */
+  position: relative; 
 
-  width: 70vh; /* Adjust width as needed */
-  height: 40vh; /* Adjust height as needed */
+  width: 70vh;
+  height: 40vh; 
   background-color: #070932; 
-  border-radius: 10px; /* Optional: adds rounded corners */
+  border-radius: 10px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,11 +39,11 @@ body{
   border: none;
 }
 .centered-div {
-  position: relative; /* Changed to relative positioning */
+  position: relative; 
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Adjust height as needed */
+  height: 100vh; 
 }
 
 
@@ -67,15 +67,13 @@ body{
 
 
 .centered-div-placeholder {
-  position: absolute; /* Positioning the placeholder absolutely */
-  font-size: 50px; /* Adjust font size as needed */
-   /* Adjust color as needed */
+  position: absolute; 
+  font-size: 50px;
    font-weight: 600;
    font-size: 130px;
    letter-spacing: 0.1px;
-   pointer-events: none; /* Prevent interaction */
+   pointer-events: none; 
    z-index: 2;
-   /* opacity: 0; */
 }
 
 .hidden{
@@ -89,29 +87,27 @@ text-align: center;
 
 .side-div {
   position: absolute;
-  top: 50%; /* Start from the middle of the parent container */
-  width: 30%; /* Adjust width as needed */
-  height: 15vh; /* Adjust height as needed */
+  top: 50%; 
+  width: 30%; 
+  height: 15vh; 
   background-color: #070932; 
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 45px;
-  font-weight: 10; /* Corrected typo */
+  font-weight: 10; 
   border-radius: 5px;
   color: #ffffff;
   z-index: 1;
-  margin-top: -7.5vh; /* Half of the height to move it up */
+  margin-top: -7.5vh; 
 }
 
 .left-side {
-  left: calc(1% - 105px - 25px); /* 100px from center div + half of side div width */
-  /* transform: translateX(-50%); */
+  left: calc(1% - 105px - 25px); 
 }
 
 .right-side {
-  right: calc(1% - 105px - 25px); /* 100px from center div + half of side div width */
-  /* transform: translateX(50%); */
+  right: calc(1% - 105px - 25px); 
 
 }
 
@@ -124,11 +120,10 @@ text-align: center;
 }
 
 input:focus {
-  outline: none; /* Prevent the default browser outline */
+  outline: none; 
 }
 
 *{
-    /* cursor: none; */
   caret-color: transparent;
 
 
@@ -136,12 +131,12 @@ input:focus {
 }
 .top-side {
   position: absolute;
-  top: 20vh; /* Adjust top positioning as needed */
+  top: 20vh; 
   left: 50%;
   transform: translateX(-50%);
-  width: 200%; /* Adjust width as needed */
-  height: 10vh; /* Adjust height as needed */
-  background-color: #070932; /* Example background color */
+  width: 200%; 
+  height: 10vh;
+  background-color: #070932; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,12 +149,12 @@ input:focus {
 
 .bottom-side {
   position: absolute;
-  bottom: 20vh; /* Adjust bottom positioning as needed */
+  bottom: 20vh; 
   left: 50%;
   transform: translateX(-50%);
-  width: 170%; /* Adjust width as needed */
-  height: 10vh; /* Adjust height as needed */
-  background-color: #070932; /* Example background color */
+  width: 170%; 
+  height: 10vh; 
+  background-color: #070932; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,12 +166,12 @@ input:focus {
 
 .github-repo{
   position: absolute;
-  bottom: 10vh; /* Adjust bottom positioning as needed */
+  bottom: 10vh; 
   left: 50%;
   transform: translateX(-50%);
-  width: 170%; /* Adjust width as needed */
-  height: 10vh; /* Adjust height as needed */
-  background-color: #070932; /* Example background color */
+  width: 170%; 
+  height: 10vh; 
+  background-color: #070932; 
   display: flex;
   justify-content: center;
   align-items: center;
