@@ -168,3 +168,25 @@ input:focus {
   border-radius: 5px;
   color: #ffffff;
 }
+
+.github-repo{
+  position: absolute;
+  bottom: 10vh; /* Adjust bottom positioning as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 170%; /* Adjust width as needed */
+  height: 10vh; /* Adjust height as needed */
+  background-color: #070932; /* Example background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 100;
+  border-radius: 5px;
+  color: #ffffff;
+
+}
+a{
+  text-decoration: none;
+  color: rgb(168, 188, 224);
+}
