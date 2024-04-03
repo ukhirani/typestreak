@@ -10,7 +10,7 @@
         
     }
     to {
-        font-size:  65px;
+        font-size:  40px;
         opacity: 1;
         background-color: red;
     }
@@ -32,5 +32,5 @@
 
 }
 .hidden{
-    animation: hideinput 0.5s ease forwards ;
+    animation: hideinput 0.8s ease forwards ;
 }

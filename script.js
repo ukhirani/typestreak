@@ -6,6 +6,9 @@ result_div = document.getElementById("centered-div-placeholder");
 var input_div = document.getElementById('input-div');
 var rightSideDiv = document.getElementById('side-div right-side');
 var leftSideDiv = document.getElementById('side-div left-side');
+
+top_div = document.getElementById('top-div');
+bottom_div = document.getElementById('bottom-div');
 var streak = 0;
 top1000Words = [
     "the", "of", "to", "and", "a", "in", "is", "it", "you", "that", "he", "was", "for", "on", "are", "with", "as", "I", "his", "they", "be", "at", "one", "have", "this", "from", "or", "had", "by", "but", "some", "what", "there", "we", "can", "out", "other", "were", "all", "your", "when", "up", "use", "how", "said", "each", "she", "which", "do", "their", "time", "if", "will", "way", "about", "many", "them", "would", "like", "so", "her", "long", "make", "see", "him", "two", "has", "look", "more", "day", "could", "come", "did", "my", "sound", "most", "who", "over", "know", "than", "call", "first", "may", "down", "been", "find", "any", "work", "part", "take", "made", "live", "where", "after", "back", "only", "round", "came", "show", "every", "good", "give", "our", "under", "very", "just", "form", "much", "great", "think", "say", "help", "line", "before", "turn", "cause", "same", "mean", "move", "right", "does", "tell", "want", "well", "also", "play", "small", "even", "land", "must", "high", "such", "follow", "went", "light", "kind", "need", "house", "picture", "again", "ask", "then", "show", "near", "build", "earth", "stand", "own", "page", "should", "found", "answer", "still", "learn", "plant", "cover", "food", "four", "thought", "keep", "last", "door", "city", "tree", "cross", "since", "hard", "might", "story", "left", "late", "don't", "while", "press", "close", "night", "real", "life", "few", "stop", "open", "seem", "next", "white", "begin", "walk", "paper", "music", "both", "mark", "book", "until", "mile", "river", "care", "took", "rain", "room", "idea", "fish", "north", "hear", "horse", "sure", "watch", "color", "face", "main", "girl", "usual", "above", "ever", "feel", "talk", "soon", "body", "dog", "pose", "song", "state", "black", "short", "class", "wind", "ship", "area", "half", "rock", "order", "fire", "piece", "told", "knew", "pass", "farm", "whole", "king", "size", "best", "during", "hundred", "early", "hold", "reach", "fast", "five", "sing", "listen", "six", "table", "travel", "less", "war", "lay", "against", "slow", "love", "road", "fall", "town", "fine", "certain", "fly", "unit", "lead", "dark", "note", "wait", "plan", "star", "rest", "able", "done", "drive", "stood", "front", "teach", "week", "final", "gave", "green", "quick", "sleep", "warm", "free", "minute", "strong", "special", "mind", "clear", "tail", "fact", "street", "inch", "lot", "course", "stay", "wheel", "full", "force", "blue", "object", "decide", "deep", "moon", "foot", "busy", "test", "record", "boat", "gold", "dry", "ago", "game", "heat", "snow", "bed", "bring", "sit", "fill", "east", "among"
@@ -171,6 +174,10 @@ function gameover(){
             result_div.classList.remove("hidden");
             result_div.classList.add("visible");
 
+            bottom_div.classList.remove('hidden');
+            bottom_div.classList.add('visible');
+
+            document.getElementById('restart').innerText = "restart";
 
 
 
@@ -266,6 +273,7 @@ function spacebar() {
     all_functions_for_swapping(); 
 
     startbit++;
+    bottom_div.classList.add('hidden');
 
 
 
@@ -296,6 +304,7 @@ function spacebar() {
             console.log("kaboom");
             gameoverbit = 1;
             pagereload = 1;
+
             gameover();
             
         }
