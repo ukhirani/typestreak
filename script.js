@@ -87,9 +87,9 @@ function validator(){
 word1 = '';
 word2 = '';
 word3 = '';
-i = Math.floor(Math.random() * (length(top1000Words)));
+i = Math.floor(Math.random() * 322);
 word4 = top1000Words[i];
-i = Math.floor(Math.random() * (length(top1000Words)));
+i = Math.floor(Math.random() * 322);
 word5 = top1000Words[i];
 function moveTextToLeft() {
     rightSideDiv.classList.add('move-left');
